@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import Card from '../components/card';
 
 const IndexPage = () => (
   <Layout>
@@ -34,10 +35,33 @@ const IndexPage = () => (
           <img src={require('../images/logo-react.png')} alt="" width="50" />
           <img src={require('../images/logo-swift.png')} alt="" width="50" />
         </div>
-        
+
+      </div>
+    </div>
+    
+    <div className="Cards">
+    <h2>11 more course is coming</h2>
+      <div className="CardGroup">
+      <Card 
+        title="View Gallery"
+        text="12 Sections"
+        image={require('../images/wallpaper.jpg')} />
+      <Card 
+        title="View Registry"
+        text="12 Sections"
+        image={require('../images/wallpaper2.jpg')} />
+      <Card 
+        title="Location"
+        text="12 Sections"
+        image={require('../images/wallpaper3.jpg')} />
+      <Card 
+        title="Guest Book"
+        text="12 Sections"
+        image={require('../images/wallpaper4.jpg')} />
       </div>
     </div>
   </Layout>
+  
 )
 
 export default IndexPage
