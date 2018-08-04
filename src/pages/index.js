@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Card from '../components/card';
+import Section from '../components/section';
+import Wave from '../components/wave';
 
 const IndexPage = () => (
   <Layout>
@@ -15,7 +17,7 @@ const IndexPage = () => (
        <Link to="/page-2/">Make RSVP</Link>
 
        <svg width="100%" height="172" viewBox="0 0 100% 172" fill="none">
-          <path fill="rgb(233, 192, 8, 0.8)">
+          <path fill="rgb(233, 192, 8, 1)">
           <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="10s"
           values="M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z;
 
@@ -35,7 +37,7 @@ const IndexPage = () => (
           <img src={require('../images/logo-react.png')} alt="" width="50" />
           <img src={require('../images/logo-swift.png')} alt="" width="50" />
         </div>
-
+        <Wave />
       </div>
     </div>
     
@@ -60,7 +62,13 @@ const IndexPage = () => (
         image={require('../images/wallpaper4.jpg')} />
       </div>
     </div>
+    <Section
+    image={require('../images/wallpaper2.jpg')}
+    logo={require('../images/logo-react.png')}
+    title="React for Designers"
+    text="Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify." />
   </Layout>
+  
   
 )
 
