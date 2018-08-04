@@ -11,7 +11,6 @@ const IndexPage = () => (
     <div className="Hero">
       <div className="HeroGroup">
         <h1>17/11</h1>
-        <p>Creating my wedding website by learning to design and code React Apps. Lets builde something great. Just dont do it half way.</p>
         <p>Welcome and thank you for being apart of our special day. We can't wait to share this day with all of you.</p>
         <br/>
        <Link to="/page-2/">Make RSVP</Link>
@@ -42,7 +41,7 @@ const IndexPage = () => (
     </div>
     
     <div className="Cards">
-    <h2>11 more course is coming</h2>
+    <h2>100 more days</h2>
       <div className="CardGroup">
       <Card 
         title="View Gallery"
@@ -65,8 +64,8 @@ const IndexPage = () => (
     <Section
     image={require('../images/wallpaper2.jpg')}
     logo={require('../images/logo-react.png')}
-    title="React for Designers"
-    text="Learn how to build a modern site using React and the most efficient libraries to get your site/product online. Get familiar with components, Grid CSS, animations, interactions, dynamic data with Contentful and deploying your site with Netlify." />
+    title="Our wedding information"
+    text="Creating my wedding website by learning to design and code React Apps. Lets builde something great. Just dont do it half way." />
   </Layout>
   
   
