@@ -1,10 +1,34 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import Card from '../components/card';
 import Section from '../components/section';
 import Wave from '../components/wave';
+import staticdata from '../../staticdata.json'
+import Cell from '../components/cell';
+
+const SectionCaption = styled.p`
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #94A4BA;
+  text-align: center;
+`
+
+const SectionCellGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+
+  @media (max-width: 800px) {
+	grid-template-columns: repeat(1, 1fr);
+  }
+`
 
 const IndexPage = () => (
   <Layout>
@@ -66,10 +90,16 @@ const IndexPage = () => (
     logo={require('../images/logo-react.png')}
     title="Our wedding information"
     text="Creating my wedding website by learning to design and code React Apps. Lets builde something great. Just dont do it half way." />
-  </Layout>
-  
-  
+
+     <SectionCaption>12 sections - 6 hours</SectionCaption>
+        <SectionCellGroup>
+          {staticdata.cells.map(cell => (
+          <Cell 
+          title={cell.title} 
+          image={cell.image} />
+          ))}
+        </SectionCellGroup>
+ </Layout>
 )
 
 export default IndexPage
-
