@@ -6,7 +6,6 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from './header'
 import './layout.css'
 import Footer from './footer';
-import styled from 'styled-components';
 
 
 const Layout = ({ children, data }) => (
@@ -50,6 +49,7 @@ const Layout = ({ children, data }) => (
     )}
   />
 )
+
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

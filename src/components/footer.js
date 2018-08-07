@@ -6,6 +6,10 @@ const FooterGroup = styled.div`
 	padding: 50px 0;
 	display: grid;
 	grid-gap: 20px;
+
+        @media (max-width: 500px) {
+        padding: 20px 30px;
+    }
 `
 
 const Text = styled.p`
@@ -14,6 +18,11 @@ const Text = styled.p`
 	color: #486791;
 	max-width: 500px;
 	margin: 0 auto;
+
+    @media (max-width: 500px) {
+        width: 100%;
+        text-align: center;
+    }
 `
 
 const Button = styled.button`
@@ -54,12 +63,20 @@ let LinkGroup = styled.div`
 	a:hover {
 		color: black;
 	}
+
+        @media (max-width: 500px) {
+        width: 100%;
+    }
 `
 const Copyright = styled.div`
 	color: #486791
 	max-width: 500px;
 	margin: 0 auto;
 	padding: 0 20px;
+
+    @media (max-width: 500px) {
+    text-align: center;
+    }
 `
 
 const Footer = ({data, children}) => (

@@ -8,7 +8,6 @@ import Section from '../components/section';
 import Wave from '../components/wave';
 import staticdata from '../../staticdata.json'
 import Cell from '../components/cell';
-import Footer from '../components/footer.js'
 
 const SectionCaption = styled.p`
   font-weight: 600;
